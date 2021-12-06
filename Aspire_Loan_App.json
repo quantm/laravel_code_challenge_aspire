@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "3715a046-4be8-46f0-8ae5-9040b7da246f",
+		"name": "Aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "rex23@example.net",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aspire@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request New Loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNzEzMDIyY2NkNjU0YzcxZjg1ZThkNTc2ZDVhMWZkNzljNmM5NWJmMjQ0ZTg5NGY0NDJjZGNkMzUyYzM4ODRkZTVmZWQyYTI1Zjk5NzYyZmUiLCJpYXQiOjE2Mzg3NDQxMTQuMDMzMjQzLCJuYmYiOjE2Mzg3NDQxMTQuMDMzMjY4LCJleHAiOjE2NzAyODAxMTQuMDIxNywic3ViIjoiMSIsInNjb3BlcyI6W119.XsqJhXsv_Hs3qAOfB3aVaO982WBJLJT4NlH7RtCaQhZkIcIRK2C0i7Cxqgj67GKE1FEDMOQYe3jhvabhwFUrgno3ScSDTa-LjPFCBORu1H4JOAUpF67-Y-feFokiUZMIFEJpzC6VAKL1cZup1WcGiNmKuFXZSJvll4vnpXov7SEc7r1n9iKI9EwjN2Gvwy2adORXvxiHfdPd5R3SxGPhV6HddBge9fGFgFmBJ2JVhEBsgZeN-fnzj_gD_cGAdC-UU7rS_SzxF95W3WZbzEV0AbqpLmXOelD_qdXg-M18thrylFTIjgv9Hh21i65uq8JtGULo1ZdXFgZUOFE8xUm2rBWhiCCY3rP_O-fvotN4PfMaVfqszmJPmlKULhR2AXdIkWvtAjVUP4e24FOh1CA4WxXvSWr0f6Z9w0_lzoApDwxLk8PDSmuE5-4-QvAxp0Cz-5Jnql6X8rWl3cf9T4yrxbLtcEPfp2YgXjyhfrEgUXt2C8BiYiyNVbc2P1sxiyW-MlzsopLSpUnlHY_nB0PzFdr93wHh5IBrw6bWDODJFIqviGIYGdP3OTK-1On81YxxHmq492OxA3jPIKDX8LK5PLA6_HSA8x2dCVxYkKlgVK1YvKIK6KCj793X6o4B8FonY65vXxoW4_svSWJy74e3Ih3KGqZMm81Tbxt9fyxDZu0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMGU5YjdjMTdiOGVkYjRmZWVlYWI5OWQwYWFjMTY5NzExNzQ1YTBlMjQyY2M1NDA3YTlmMzY3M2M2NzQwNmNkMTAyODJlYzM0MTk5MWMzMjUiLCJpYXQiOjE2Mzg3MTg5MTEuMjIyMzMsIm5iZiI6MTYzODcxODkxMS4yMjIzNzIsImV4cCI6MTY3MDI1NDkxMS4xNzE3MzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.eYC5rvXDOm66vqDMiEWO1B9RISrNnr_XwocpA5bUPPJe7d1d8CocM353-0fD6aQcifEuOHoi9F37jNgNIlitrOnSHibuLQ8pWYk9JU-BGjeqJvCX7YMewg2HaKcw0_iKlBJ-vjLvKDrv6nfeVvNK6TvcVHWRff0je65NIm7Y_ydOrr_1Z0c15YxNGrd0x5BH0gRk9pkZhcPnhC4mjdtwxHAXIlHDGAoPfwWJ72MrL4JjzXtDOx7r3T5UdOOzSxbVKQCqbMtMr28tt437rdnMKCJ07nYT61ZxlqgERrHBPkbVdyit1oIqbNyNPNPABhRAfU9moq5k59d7aJBBzXC_-qp5xB06W4WRthsK_MdqC05giL5aLglE-a4c81oBvRfdgNOEI7Inj1_RimEL8dcFxljXNDF89oKVSr4mx34yjGTzZCMZSScHua6qbOiK-AXROFJy17VaICAp_e-OuF-WyfKDpmECgolDgZuH6ehymaiU_5sh2YuSGL5lVylY08qVlHkPbBLAVZ13Sx7fP5bvkfhA1vCSImddtM4WgqXeI_xz6_yOBQd89tVcvZBhgs15wFhtt8Zj-Q29V1P2V8t9iTnqDSkeGdSmOOZTrwLGhM4Pl4EquDJqMLPr2OpQbGCDBnM9nmh3EITbRAPr9zeE4KDStUVosfsUrFpUoLiQESk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_amount",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "loan_term",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/loans",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Repayment Loan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNzEzMDIyY2NkNjU0YzcxZjg1ZThkNTc2ZDVhMWZkNzljNmM5NWJmMjQ0ZTg5NGY0NDJjZGNkMzUyYzM4ODRkZTVmZWQyYTI1Zjk5NzYyZmUiLCJpYXQiOjE2Mzg3NDQxMTQuMDMzMjQzLCJuYmYiOjE2Mzg3NDQxMTQuMDMzMjY4LCJleHAiOjE2NzAyODAxMTQuMDIxNywic3ViIjoiMSIsInNjb3BlcyI6W119.XsqJhXsv_Hs3qAOfB3aVaO982WBJLJT4NlH7RtCaQhZkIcIRK2C0i7Cxqgj67GKE1FEDMOQYe3jhvabhwFUrgno3ScSDTa-LjPFCBORu1H4JOAUpF67-Y-feFokiUZMIFEJpzC6VAKL1cZup1WcGiNmKuFXZSJvll4vnpXov7SEc7r1n9iKI9EwjN2Gvwy2adORXvxiHfdPd5R3SxGPhV6HddBge9fGFgFmBJ2JVhEBsgZeN-fnzj_gD_cGAdC-UU7rS_SzxF95W3WZbzEV0AbqpLmXOelD_qdXg-M18thrylFTIjgv9Hh21i65uq8JtGULo1ZdXFgZUOFE8xUm2rBWhiCCY3rP_O-fvotN4PfMaVfqszmJPmlKULhR2AXdIkWvtAjVUP4e24FOh1CA4WxXvSWr0f6Z9w0_lzoApDwxLk8PDSmuE5-4-QvAxp0Cz-5Jnql6X8rWl3cf9T4yrxbLtcEPfp2YgXjyhfrEgUXt2C8BiYiyNVbc2P1sxiyW-MlzsopLSpUnlHY_nB0PzFdr93wHh5IBrw6bWDODJFIqviGIYGdP3OTK-1On81YxxHmq492OxA3jPIKDX8LK5PLA6_HSA8x2dCVxYkKlgVK1YvKIK6KCj793X6o4B8FonY65vXxoW4_svSWJy74e3Ih3KGqZMm81Tbxt9fyxDZu0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMGU5YjdjMTdiOGVkYjRmZWVlYWI5OWQwYWFjMTY5NzExNzQ1YTBlMjQyY2M1NDA3YTlmMzY3M2M2NzQwNmNkMTAyODJlYzM0MTk5MWMzMjUiLCJpYXQiOjE2Mzg3MTg5MTEuMjIyMzMsIm5iZiI6MTYzODcxODkxMS4yMjIzNzIsImV4cCI6MTY3MDI1NDkxMS4xNzE3MzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.eYC5rvXDOm66vqDMiEWO1B9RISrNnr_XwocpA5bUPPJe7d1d8CocM353-0fD6aQcifEuOHoi9F37jNgNIlitrOnSHibuLQ8pWYk9JU-BGjeqJvCX7YMewg2HaKcw0_iKlBJ-vjLvKDrv6nfeVvNK6TvcVHWRff0je65NIm7Y_ydOrr_1Z0c15YxNGrd0x5BH0gRk9pkZhcPnhC4mjdtwxHAXIlHDGAoPfwWJ72MrL4JjzXtDOx7r3T5UdOOzSxbVKQCqbMtMr28tt437rdnMKCJ07nYT61ZxlqgERrHBPkbVdyit1oIqbNyNPNPABhRAfU9moq5k59d7aJBBzXC_-qp5xB06W4WRthsK_MdqC05giL5aLglE-a4c81oBvRfdgNOEI7Inj1_RimEL8dcFxljXNDF89oKVSr4mx34yjGTzZCMZSScHua6qbOiK-AXROFJy17VaICAp_e-OuF-WyfKDpmECgolDgZuH6ehymaiU_5sh2YuSGL5lVylY08qVlHkPbBLAVZ13Sx7fP5bvkfhA1vCSImddtM4WgqXeI_xz6_yOBQd89tVcvZBhgs15wFhtt8Zj-Q29V1P2V8t9iTnqDSkeGdSmOOZTrwLGhM4Pl4EquDJqMLPr2OpQbGCDBnM9nmh3EITbRAPr9zeE4KDStUVosfsUrFpUoLiQESk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "repay_amount",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/loan-repayment",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"loan-repayment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Repayment Loan - Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMGU5YjdjMTdiOGVkYjRmZWVlYWI5OWQwYWFjMTY5NzExNzQ1YTBlMjQyY2M1NDA3YTlmMzY3M2M2NzQwNmNkMTAyODJlYzM0MTk5MWMzMjUiLCJpYXQiOjE2Mzg3MTg5MTEuMjIyMzMsIm5iZiI6MTYzODcxODkxMS4yMjIzNzIsImV4cCI6MTY3MDI1NDkxMS4xNzE3MzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.eYC5rvXDOm66vqDMiEWO1B9RISrNnr_XwocpA5bUPPJe7d1d8CocM353-0fD6aQcifEuOHoi9F37jNgNIlitrOnSHibuLQ8pWYk9JU-BGjeqJvCX7YMewg2HaKcw0_iKlBJ-vjLvKDrv6nfeVvNK6TvcVHWRff0je65NIm7Y_ydOrr_1Z0c15YxNGrd0x5BH0gRk9pkZhcPnhC4mjdtwxHAXIlHDGAoPfwWJ72MrL4JjzXtDOx7r3T5UdOOzSxbVKQCqbMtMr28tt437rdnMKCJ07nYT61ZxlqgERrHBPkbVdyit1oIqbNyNPNPABhRAfU9moq5k59d7aJBBzXC_-qp5xB06W4WRthsK_MdqC05giL5aLglE-a4c81oBvRfdgNOEI7Inj1_RimEL8dcFxljXNDF89oKVSr4mx34yjGTzZCMZSScHua6qbOiK-AXROFJy17VaICAp_e-OuF-WyfKDpmECgolDgZuH6ehymaiU_5sh2YuSGL5lVylY08qVlHkPbBLAVZ13Sx7fP5bvkfhA1vCSImddtM4WgqXeI_xz6_yOBQd89tVcvZBhgs15wFhtt8Zj-Q29V1P2V8t9iTnqDSkeGdSmOOZTrwLGhM4Pl4EquDJqMLPr2OpQbGCDBnM9nmh3EITbRAPr9zeE4KDStUVosfsUrFpUoLiQESk"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "repay_amount",
+									"value": "20000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/loan-repayment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"loan-repayment"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 20:41:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Repayment Warning.\",\n    \"data\": \"Your repayment amount doesn't match with approved repayment amount (2000).\"\n}"
+				},
+				{
+					"name": "Repayment Loan - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMGU5YjdjMTdiOGVkYjRmZWVlYWI5OWQwYWFjMTY5NzExNzQ1YTBlMjQyY2M1NDA3YTlmMzY3M2M2NzQwNmNkMTAyODJlYzM0MTk5MWMzMjUiLCJpYXQiOjE2Mzg3MTg5MTEuMjIyMzMsIm5iZiI6MTYzODcxODkxMS4yMjIzNzIsImV4cCI6MTY3MDI1NDkxMS4xNzE3MzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.eYC5rvXDOm66vqDMiEWO1B9RISrNnr_XwocpA5bUPPJe7d1d8CocM353-0fD6aQcifEuOHoi9F37jNgNIlitrOnSHibuLQ8pWYk9JU-BGjeqJvCX7YMewg2HaKcw0_iKlBJ-vjLvKDrv6nfeVvNK6TvcVHWRff0je65NIm7Y_ydOrr_1Z0c15YxNGrd0x5BH0gRk9pkZhcPnhC4mjdtwxHAXIlHDGAoPfwWJ72MrL4JjzXtDOx7r3T5UdOOzSxbVKQCqbMtMr28tt437rdnMKCJ07nYT61ZxlqgERrHBPkbVdyit1oIqbNyNPNPABhRAfU9moq5k59d7aJBBzXC_-qp5xB06W4WRthsK_MdqC05giL5aLglE-a4c81oBvRfdgNOEI7Inj1_RimEL8dcFxljXNDF89oKVSr4mx34yjGTzZCMZSScHua6qbOiK-AXROFJy17VaICAp_e-OuF-WyfKDpmECgolDgZuH6ehymaiU_5sh2YuSGL5lVylY08qVlHkPbBLAVZ13Sx7fP5bvkfhA1vCSImddtM4WgqXeI_xz6_yOBQd89tVcvZBhgs15wFhtt8Zj-Q29V1P2V8t9iTnqDSkeGdSmOOZTrwLGhM4Pl4EquDJqMLPr2OpQbGCDBnM9nmh3EITbRAPr9zeE4KDStUVosfsUrFpUoLiQESk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "repay_amount",
+									"value": "2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/loan-repayment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"loan-repayment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 20:43:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": \"Repayment Success.\",\n    \"message\": \"Your payment has been successfully received.\"\n}"
+				}
+			]
+		}
+	]
+}
